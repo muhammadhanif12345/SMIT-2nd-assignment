@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color: skyblue;
+        }
+
+        table{
+            background-color: skyblue   ;
+        }
+        table td{
+            background-color: aqua;
+        }
+        input{
+            background-color: aqua;
+        }
+        select{
+            background-color: aqua;
+        }
+
+        .pages {
+            display: flex;
+            justify-content: space-around;
+             font-size: x-large;
+             /* background-color: aqua; */
+             width: 40%;
+        }
+
+        .pages a{
+            color: brown; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="pages">
+
+            <p><a href="index.html">Home page</a></p>
+ 
+            <p><a href="gallery.html">Gallery Page</a></p>
+
+        </div>
+        <hr>
+
+        <table border="2">
+            <form action="index.html">
+                <tr>
+                    <th colspan="5">Registration Form</th>
+                </tr>
+                <tr>
+                    <th>Student name</th>
+                    <td><input type="Student name" name="student name" required ></td>
+                </tr>
+                <tr>
+                    <th>Father Name</th>
+                    <td><input type="father name" name="father name" required></td>
+                </tr>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td><input type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td><label for="Male"> Male <input id="Male" type="radio" name="Gender"></label> <label for="Female"> Female <input id="Female" type="radio" name="Gender"></label></td>
+                </tr>
+                <tr>
+                    <th>Email No.</th>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th>Mobile No.</th>
+                    <td><input type="number" name="number"required></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><input type="address" name="address" required></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td><input type="state" name="state" required></td>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <td> <select name="provinces" id="">
+                        <option value="select"></option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="Balochistan">Balochistan</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                    </select> </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td colspan="5"><input type="submit"></td>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+</html>
